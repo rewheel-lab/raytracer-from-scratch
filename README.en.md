@@ -24,6 +24,12 @@ Each episode has two folders:
 
 If you get stuck in an episode, you can rejoin at the `_start` folder of a later episode.
 
+## Experiment programs for the extra episodes
+
+The `extra/` folder contains the experiment programs used in the extra episodes. Each folder is one Visual Studio project: double-click its `.sln` file and press F5.
+
+`extra/random` (the extra episode "Random Numbers") plots points on the screen so you can see the patterns in random numbers. Switch how the numbers are made with the keys 1 to 6 (1: `rand()`, 2: the multiply-add-remainder method, 3: the xorshift from Raytracer #07, 4: xorshift with seed 0, 5: xorshift with a fixed seed of 1, which gives the same image every time, 6: xorshift seeded with the startup time, which gives a new image every time). The number sequence and other test results appear in the console window. Press Esc to exit. The full list of controls is at the top of `main.cpp`.
+
 ## License
 
 This project is licensed under the MIT License. See `LICENSE`. You may freely modify it or include it in your own work.
