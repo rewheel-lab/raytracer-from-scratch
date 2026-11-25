@@ -30,6 +30,8 @@ The `extra/` folder contains the experiment programs used in the extra episodes.
 
 `extra/random` (the extra episode "Random Numbers") plots points on the screen so you can see the patterns in random numbers. Switch how the numbers are made with the keys 1 to 6 (1: `rand()`, 2: the multiply-add-remainder method, 3: the xorshift from Raytracer #07, 4: xorshift with seed 0, 5: xorshift with a fixed seed of 1, which gives the same image every time, 6: xorshift seeded with the startup time, which gives a new image every time). The number sequence and other test results appear in the console window. Press Esc to exit. The full list of controls is at the top of `main.cpp`.
 
+`extra/gamma` (the extra episode "Gamma and sRGB") lets you see with your own eyes the gap between the numbers sent to the screen (0 to 255) and the amount of light. Switch the experiments with the keys 1 to 6 (1: fine black-and-white stripes next to the grays with the numbers 128 and 188, 2: a black-to-white gradient spaced evenly by number and one spaced evenly by light, 3: a gradient between two colors, mixed as numbers and mixed as light, 4: the image from Raytracer #08, with and without gamma correction, 5: a 32-step gradient with equal steps of light and with equal steps of number, 6: a fine black-and-white image shrunk to half size, averaged as numbers and averaged as light). P prints the current experiment's numbers to the console window, and Esc exits. The keys for each experiment (W, H, C, G, B, R, and S) and the full list of controls are at the top of `main.cpp`.
+
 ## License
 
 This project is licensed under the MIT License. See `LICENSE`. You may freely modify it or include it in your own work.
